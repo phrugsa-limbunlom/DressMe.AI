@@ -1,0 +1,6 @@
+gradio
+pillow==10.2.0
+python-dotenv==1.0.1
+mistralai
+openai==1.55.3
+tavily-python==0.5.1
