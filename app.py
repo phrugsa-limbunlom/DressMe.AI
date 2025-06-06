@@ -161,7 +161,7 @@ if __name__ == "__main__":
                     analyze_btn = gr.Button("Submit", variant="primary")
                     clear_btn = gr.Button("Clear", variant="secondary")
                 gr.Examples(
-                    examples=["person1.jpg", "person2.jpg"],
+                    examples=["./images/person1.jpg", "./images/person2.jpg"],
                     inputs=image_input,
                     label="Try Examples"
                 )
