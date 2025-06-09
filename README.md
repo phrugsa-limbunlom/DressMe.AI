@@ -47,7 +47,6 @@ To help users discover clothing styles tailored to their appearance using comput
 
 - `search_recommended_products(info)`  
   → Uses Mistral to turn descriptions into product search queries and fetches results from online stores using Tavily.
-- 
 
 ## 📦 Dependencies
 
@@ -67,4 +66,5 @@ pip install -r requirements.txt
 Made with ❤️ using Gradio, Mistral, Nebius, and Tavily APIs.
 
 GitHub: https://github.com/phrugsa-limbunlom
+
 Linkedln: https://www.linkedin.com/in/phrugsa-limbunlom-5b8995117/
