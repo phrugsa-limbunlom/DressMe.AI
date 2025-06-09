@@ -23,7 +23,7 @@ def encode_image(pil_image):
 
 
 def generate_image(description):
-    prompt = ("Generate 3 realistic images of a person dressed in each style described below, "
+    prompt = ("Generate 3 realistic images (with the full body) of a person dressed in each style described below, "
               "accurately reflecting the clothing, colors, and accessories mentioned. "
               "**Do not include any text in those images.**\n\n") + description
 
@@ -113,8 +113,10 @@ def analyze_person(image):
         "role": "user",
         "content": [
             {"type": "text",
-             "text": "You are an AI agent tasked with analyzing the characteristics of the person in the photo. "
-                     "Recommend the top 3 styles of dressing that best suit"},
+             "text": "You are an AI agent tasked with analyzing the characteristics of the person in the photo."
+                     "Analyze physical features such as facial structure, hairstyle, hair color, and skin tone."
+                     "Recommend the top 3 styles of dressing that best suit based on analysis"
+                     "Generate only 1,800 maximum characters"},
             {"type": "image_url", "image_url": f"data:image/jpeg;base64,{encoded}"}
         ]
     }]
@@ -179,6 +181,17 @@ if __name__ == "__main__":
             outputs=[style_output, image_output, product1_output, product2_output, product3_output]
         )
 
-        clear_btn.click(fn=lambda: None, inputs=None, outputs=image_input)
+        clear_btn.click(
+            fn=lambda: (None, "", None, "", "", ""),
+            inputs=None,
+            outputs=[
+                image_input,
+                style_output,
+                image_output,
+                product1_output,
+                product2_output,
+                product3_output
+            ]
+        )
 
     demo.launch(show_error=True)
