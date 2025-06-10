@@ -304,6 +304,7 @@ if __name__ == "__main__":
     with gr.Blocks() as demo:
         gr.Markdown("## 👗 DressMe.AI — Personalized Fashion Style Recommendations")
 
+        gr.Markdown("### DressMe.ai is an AI-powered fashion assistant dressing you with personalized style recommendations, shopping links, and specific improvement through individual user feedback.")
         gr.Markdown("[Read more about DressMe.AI](https://huggingface.co/spaces/Agents-MCP-Hackathon/DressMe.AI/blob/main/README.md)")
 
         # Hidden state to store user ID
@@ -311,8 +312,6 @@ if __name__ == "__main__":
 
         # Feedback type state (like or dislike)
         feedback_type_state = gr.State()
-
-        print(feedback_type_state)
 
         with gr.Row():
             with gr.Column():
