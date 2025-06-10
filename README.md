@@ -36,7 +36,7 @@ To help users discover clothing styles tailored to their appearance using comput
 | Task                              | Model / API                                                                      |
 | :-------------------------------- |:---------------------------------------------------------------------------------|
 | **Vision Capability for Style Analysis** | `pixtral-12b-2409` (via [Mistral](https://mistral.ai))                           |
-| **Image Generation** | `black-forest-labs/flux-schnell` (via [Nebius API](https://nebius.com/)) (currently disabled) |
+| **Image Generation** | `black-forest-labs/flux-schnell` (via [Nebius API](https://nebius.com/))|
 | **Query Analysis for Product Search** | `mistral-large-latest` (via Mistral)                                             |
 | **Feedback Analysis** | `mistral-large-latest` (via Mistral) |
 | **Marketplace Search** | [Tavily API](https://www.tavily.com/)                                            |
