@@ -62,6 +62,7 @@ To help users discover clothing styles tailored to their appearance using comput
 - `openai`
 - `mistralai`
 - `tavily`
+- `chromadb`
 - `python-dotenv`
 
 Install dependencies with:
@@ -72,6 +73,6 @@ pip install -r requirements.txt
 
 Made with 🧠 & ❤️ using Gradio, Mistral, Nebius, and Tavily APIs.
 
-GitHub: https://github.com/phrugsa-limbunlom
+GitHub: [phrugsa-limbunlom](https://github.com/phrugsa-limbunlom)
 
-Linkedln: https://www.linkedin.com/in/phrugsa-limbunlom-5b8995117/
+Linkedln: [Phrugsa Limbunlom](https://www.linkedin.com/in/phrugsa-limbunlom-5b8995117/)
