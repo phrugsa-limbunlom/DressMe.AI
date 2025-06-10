@@ -385,4 +385,4 @@ if __name__ == "__main__":
                      generate_again_btn]
         )
 
-    demo.launch(show_error=True)
+    demo.launch(show_error=True, share=True)
