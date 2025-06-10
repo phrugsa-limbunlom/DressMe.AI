@@ -7,7 +7,7 @@ colorTo: pink
 sdk: gradio
 sdk_version: 5.33.1
 app_file: app.py
-pinned: false
+pinned: true
 license: mit
 short_description: 👗 DressMe.AI — Personalized Fashion Style Recommendations
 thumbnail: >-
