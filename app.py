@@ -267,7 +267,7 @@ def handle_submit_feedback(feedback_text_value, style_output_value, user_id, fee
     # Save feedback to vector database
     success = save_feedback_to_vector_db(user_id, feedback_text_value, style_output_value, analysis)
 
-    if not success:
+    if success:
 
         is_generate = feedback_type == "dislike"
 
