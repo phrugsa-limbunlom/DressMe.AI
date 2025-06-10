@@ -243,7 +243,7 @@ def analyze_person(image, user_id=None):
 # ========== Feedback Processing ==========
 def handle_yes_feedback():
     return {
-        feedback_type_state: gr.update(value="like"),
+        feedback_type_state: "like",
         feedback_output: gr.update(visible=False),
         feedback_text: gr.update(label="Tell me what you like", visible=True),
         submit_feedback_btn: gr.update(visible=True),
@@ -253,7 +253,7 @@ def handle_yes_feedback():
 
 def handle_no_feedback():
     return {
-        feedback_type_state: gr.update(value="dislike"),
+        feedback_type_state: "dislike",
         feedback_output: gr.update(visible=False),
         feedback_text: gr.update(label="Tell us what went wrong", visible=True),
         submit_feedback_btn: gr.update(visible=True),
@@ -267,9 +267,10 @@ def handle_submit_feedback(feedback_text_value, style_output_value, user_id, fee
     # Save feedback to vector database
     success = save_feedback_to_vector_db(user_id, feedback_text_value, style_output_value, analysis)
 
-    is_generate = feedback_type == "dislike"
+    if not success:
 
-    if success:
+        is_generate = feedback_type == "dislike"
+
         return {
             feedback_output: gr.update(
                 value=f"Thank you for your feedback!\n\nFeedback saved successfully!\n\n{analysis}",
@@ -290,18 +291,12 @@ def handle_submit_feedback(feedback_text_value, style_output_value, user_id, fee
 
 def handle_generate_again(image, user_id):
     if image is None:
-        return "Please upload an image first.", None, "", "", "", {
-            feedback_output: gr.update(visible=False),
-            generate_again_btn: gr.update(visible=False)
-        }
+        return "Please upload an image first.", None, "", "", "", gr.update(visible=False), gr.update(visible=False),
+
 
     style, img, prod1, prod2, prod3, _ = analyze_person(image, user_id)
 
-    return style, img, prod1, prod2, prod3, {
-        feedback_output: gr.update(visible=False),
-        generate_again_btn: gr.update(visible=False)
-    }
-
+    return style, img, prod1, prod2, prod3, gr.update(visible=False), gr.update(visible=False)
 
 if __name__ == "__main__":
     load_dotenv(find_dotenv())
@@ -309,11 +304,14 @@ if __name__ == "__main__":
     with gr.Blocks() as demo:
         gr.Markdown("## 👗 DressMe.AI — Personalized Fashion Style Recommendations")
 
+        gr.Markdown("[Read more about DressMe.AI](https://huggingface.co/spaces/Agents-MCP-Hackathon/DressMe.AI/blob/main/README.md)")
+
         # Hidden state to store user ID
-        user_id_state = gr.State()
+        user_id_state = gr.State(value="")
 
         # Feedback type state (like or dislike)
         feedback_type_state = gr.State()
+
         print(feedback_type_state)
 
         with gr.Row():
@@ -381,8 +379,7 @@ if __name__ == "__main__":
         generate_again_btn.click(
             fn=handle_generate_again,
             inputs=[image_input, user_id_state],
-            outputs=[style_output, image_output, product1_output, product2_output, product3_output, feedback_output,
-                     generate_again_btn]
+            outputs=[style_output, image_output, product1_output, product2_output, product3_output, feedback_output, generate_again_btn]
         )
 
     demo.launch(show_error=True, share=True)
