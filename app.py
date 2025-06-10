@@ -306,7 +306,7 @@ if __name__ == "__main__":
 
         gr.Markdown("### DressMe.AI is an AI-powered fashion assistant dressing you with personalized style recommendations, shopping links, and specific improvement through individual user feedback.")
         gr.Markdown("[Read more about DressMe.AI](https://huggingface.co/spaces/Agents-MCP-Hackathon/DressMe.AI/blob/main/README.md)")
-
+        gr.Markdown("[Watch DressMe.AI Demo](https://www.youtube.com/watch?v=6ten78F3TmQ)")
         # Hidden state to store user ID
         user_id_state = gr.State(value="")
 

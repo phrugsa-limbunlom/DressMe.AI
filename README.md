@@ -17,6 +17,8 @@ thumbnail: >-
 
 **DressMe.AI** is an AI-powered fashion assistant that provides **personalized style recommendations** based on a user's uploaded photo. It analyzes physical features and suggests styles that complement individual characteristics, generating realistic visuals and matching product links for online shopping. This application also incorporates a **feedback mechanism** to continuously improve its recommendations based on user preferences.
 
+[Watch DressMe.AI Demo](https://www.youtube.com/watch?v=6ten78F3TmQ)
+
 ## 🚀 Purpose
 
 To help users discover clothing styles tailored to their appearance using computer vision and language models — making fashion more personal, engaging, and AI-enhanced.
