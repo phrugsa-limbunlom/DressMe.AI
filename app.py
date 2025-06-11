@@ -346,10 +346,11 @@ if __name__ == "__main__":
         )
 
         # Feedback area
-        with gr.Row():
+        with gr.Column():
             gr.Markdown("### 🤔 Did you like the recommendations?")
-            yes_btn = gr.Button("👍 Yes")
-            no_btn = gr.Button("👎 No")
+            with gr.Row():
+                yes_btn = gr.Button("👍 Yes")
+                no_btn = gr.Button("👎 No")
 
         feedback_text = gr.Textbox(visible=False, lines=2)
         submit_feedback_btn = gr.Button("Submit Feedback", visible=False)
