@@ -1,6 +1,4 @@
 ---
-tags:
-- agent-demo-track
 title: DressMe.AI
 emoji: 👗
 colorFrom: purple
@@ -13,6 +11,8 @@ license: mit
 short_description: 👗 DressMe.AI — Personalized Fashion Style Recommendations
 thumbnail: >-
   https://cdn-uploads.huggingface.co/production/uploads/66265a84af5c20bdffef0120/y6FywE76xt5_n4vWEf_7K.jpeg
+tags:
+- agent-demo-track
 ---
 # 👗 DressMe.AI
 
