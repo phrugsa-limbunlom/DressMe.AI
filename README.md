@@ -1,5 +1,6 @@
 ---
-tag: agent-demo-track
+tags:
+- agent-demo-track
 title: DressMe.AI
 emoji: 👗
 colorFrom: purple
