@@ -10,9 +10,10 @@ pinned: true
 license: mit
 short_description: 👗 DressMe.AI — Personalized Fashion Style Recommendations
 thumbnail: >-
-  https://cdn-uploads.huggingface.co/production/uploads/66265a84af5c20bdffef0120/y6FywE76xt5_n4vWEf_7K.jpeg
+  https://cdn-uploads.huggingface.co/production/uploads/66265a84af5c20bdffef0120/9VciGCGyVCUj83NqbwQ2A.png
 tags:
 - agent-demo-track
+demo: https://www.youtube.com/watch?v=6ten78F3TmQ
 ---
 # 👗 DressMe.AI
 
