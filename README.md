@@ -1,8 +1,14 @@
-# 👗 DressMe.AI
+<h1 align="center"> 👗 DressMe.AI </h1>
 
-**DressMe.AI** is an AI-powered fashion assistant that provides **personalized style recommendations** based on a user's uploaded photo. It analyzes physical features and suggests styles that complement individual characteristics, generating realistic visuals and matching product links for online shopping. This application incorporates a **feedback mechanism** with vector database storage to continuously improve recommendations based on user preferences.
+<img src="https://github.com/user-attachments/assets/f8444131-0a00-43e4-b499-31b734d4cff5" align="center">
 
-[Try DressMe.AI Demo](https://huggingface.co/spaces/Agents-MCP-Hackathon/DressMe.AI)
+<div align="center">
+  <br>
+  <b><i>DressMe.AI</i></b> is an AI-powered fashion assistant that provides <i> personalized style recommendations </i> based on a user's uploaded photo. It analyzes physical features and suggests styles that complement individual characteristics, generating realistic visuals and matching product links for online shopping. This application incorporates a <i> feedback mechanism </i> with vector database storage to continuously improve recommendations based on user preferences.
+  <br>
+  <br>
+    🎬 <a href="https://www.youtube.com/watch?v=6ten78F3TmQ"> Watch DressMe.AI Demo </a> 💫 <a href="https://huggingface.co/spaces/Agents-MCP-Hackathon/DressMe.AI">Try DressMe.AI Demo </a> 
+</div>
 
 ## 🚀 Purpose
 
