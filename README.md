@@ -177,7 +177,7 @@ AI-generated feedback analysis includes:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/phrugsa-limbunlom/DressMe.AI/blob/main/LICENSE) file for details.
 
 ## 👨‍💻 Author
 
